@@ -1,4 +1,12 @@
 --[[
+Author: 15868707168@163.com 15868707168@163.com
+Date: 2023-03-07 17:14:01
+LastEditors: 15868707168@163.com 15868707168@163.com
+LastEditTime: 2023-03-09 15:31:33
+FilePath: \LuaLesson\3_基本数据类型_3_table.lua
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+--]]
+--[[
     table 表，不是指数据库中的表，而是一种数据类型，类似于map,用k-v的方式来表现，理论上来讲，
     除了nil,其他字符都可以作为k值（索引值）
 
@@ -24,6 +32,19 @@
                只能遍历到集合中出现的第一个不是整数的key.
 
        + pairs 能遍历集合的所有元素。即 pairs 可以遍历集合中所有的key，并且除了迭代器本身还可以返回 nil
+
+
+    //循环嵌套
+    for key, value in pairs(info7) do
+        print(key, value)
+        if type(value) == "table"
+        then
+            for key2, value2 in pairs(value) do
+                print("\t", key2, value2)
+            end
+        end
+    end
+
 ]]
 info = {
     name = 111,
@@ -172,6 +193,21 @@ info7 = {
     sons = { 111, 222 }
 }
 
+
+--info7.sons = nil
+
+info7[1] = nil
+
+--嵌套修改
+info7.sons[1] = 222222
+
+
 for key, value in pairs(info7) do
     print(key, value)
+    if type(value) == "table"
+    then
+        for key2, value2 in pairs(value) do
+            print("\t", key2, value2)
+        end
+    end
 end

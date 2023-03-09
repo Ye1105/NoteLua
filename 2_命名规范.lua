@@ -40,3 +40,7 @@ do
 end
 
 print(a, b)
+
+
+a1a = "111"
+print(a1a)
