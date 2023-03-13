@@ -19,6 +19,16 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
         + table.remove(list, pos) 删除数组中元素，默认删除最后一个
 
         + table.insert(list, pos, value)  向指定位置插入元素，默认插入到最后
+
+        + table.sort(list, comp)  排序
+
+        + table.move(t1,f,e,t,t2)
+            + 将元素把表 t1 移动到 t2
+            + t1
+            + f
+            + e
+            + t : 选择插入到表 t2 的开始位置
+            + t2
 ]]
 -- 自定义下标
 -- t1 = { 1, 2, 3 }
@@ -54,15 +64,23 @@ t1 = { "abc", "bfg","mn", "cji"}
 
 -- table.sort(t1)
 
-function funSort(a,b)
-    return  a>b
-end
+-- function funSort(a,b)
+--     return  a>b
+-- end
 
 
--- funSort 必须在 table.sort 使用之前声明
-table.sort(t1,funSort)
+-- -- funSort 必须在 table.sort 使用之前声明
+-- table.sort(t1,funSort)
 
---
-print(table.concat(t1, " "))
+--print(table.concat(t1, " "))
+
+t11 = { "1", "2","3", "4"}
+t2={"m"}
+
+table.move(t11,1,4,2,t2)
+
+
+print(table.concat(t2, " "))
+
 
 
