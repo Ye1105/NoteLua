@@ -26,14 +26,13 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
         + string.find(str1,"cd",-5)  --如果是负数，则是从字符串长度+该负数的下一个位置开始找
         + string.find(str1,"cd",false)  --默认匹配正则表达式
         + string.find(str1,"cd",true)  --最后一个参数，true 是直接当子串处理
-    + 替换 string.gsub(s, pattern, repl, n)=>string,number  
+    + 替换 string.gsub(s, pattern, repl, n)=>string,number
         + string 替换后的字符串
         + number 替换的数量
 ]]
+str = "123ABC"
 
-str="123ABC"
-
-str2="456efd"
+str2 = "456efd"
 
 -- 转小写
 -- str=string.lower(str)
@@ -59,5 +58,5 @@ str2="456efd"
 -- a,b=string.find(str5, "fs")
 -- print(a,b)
 
-str5='abcd1122abc'
-print(string.gsub(str5,"abc","MM"))
+str5 = 'abcd1122abc'
+print(string.gsub(str5, "abc", "MM"))
