@@ -2,6 +2,14 @@
 Author: 15868707168@163.com 15868707168@163.com
 Date: 2023-03-09 15:52:37
 LastEditors: 15868707168@163.com 15868707168@163.com
+LastEditTime: 2023-03-13 09:30:18
+FilePath: \LuaLesson\4.1_基本运算符.lua
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+--]]
+--[[
+Author: 15868707168@163.com 15868707168@163.com
+Date: 2023-03-09 15:52:37
+LastEditors: 15868707168@163.com 15868707168@163.com
 LastEditTime: 2023-03-09 15:54:24
 FilePath: \LuaLesson\4.1_基本运算符.lua
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -22,7 +30,7 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
         +  ~=
         +  >=
         +  <=
-        +  关系运算符的结果只能是 tru 或 flase, 且只能在相同类型的数据间运算（运算时不会做隐式类型转换）
+        +  关系运算符的结果只能是 true 或 flase, 且只能在相同类型的数据间运算（运算时不会做隐式类型转换）
 
     + 对于对象型的数据（function，usedata，table），比较运算是比较其引用
 ]]
