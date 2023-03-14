@@ -2,12 +2,20 @@
 Author: 15868707168@163.com 15868707168@163.com
 Date: 2023-03-13 10:41:56
 LastEditors: 15868707168@163.com 15868707168@163.com
+LastEditTime: 2023-03-14 09:19:16
+FilePath: \LuaLesson\6_table常用api.lua
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+--]]
+--[[
+Author: 15868707168@163.com 15868707168@163.com
+Date: 2023-03-13 10:41:56
+LastEditors: 15868707168@163.com 15868707168@163.com
 LastEditTime: 2023-03-13 14:39:44
 FilePath: \LuaLesson\6.1_table.lua
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 --]]
 --[[
-    NOTE: table
+    NOTE: Table
     + array
 
     + hash
@@ -36,31 +44,30 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
 --     io.write(index, " =>", value, "\n")
 -- end
 
-t1 = { "abc", "bfg","mn", "cji"}
+t1 = { "abc", "bfg", "mn", "cji" }
 
--- t2 = { "abc", "efg", nil, "hji" }
+t2 = { "abc", "efg", nil, "hji" }
 
--- t3 = { "abc", "efg", name = "xiaoming", "hji" }
+t3 = { "abc", "efg", name = "xiaoming", "hji" }
 
 -- -- print(table.concat(t1))
 
--- -- print(table.concat(t1, "--", 2))
+print(table.concat(t1, "--", 2))
 
--- -- print(table.concat(t1, "--", 2, 3))
+print(table.concat(t1, "--", 2, 3))
 
--- -- --print(table.concat(t2))
+--print(table.concat(t2))
 
--- -- print(table.concat(t3))
-
--- print(table.concat(t1, " "))
-
--- table.remove(t1, 1)
+print(table.concat(t3))
 
 -- print(table.concat(t1, " "))
+table.remove(t1, 1)
 
--- table.insert(t1, 2, "yejiancong")
+print(table.concat(t1, " "))
 
--- print(table.concat(t1, " "))
+table.insert(t1, 2, "yejiancong")
+
+print(table.concat(t1, " "))
 
 -- table.sort(t1)
 
@@ -74,13 +81,10 @@ t1 = { "abc", "bfg","mn", "cji"}
 
 --print(table.concat(t1, " "))
 
-t11 = { "1", "2","3", "4"}
-t2={"m"}
+t11 = { "1", "2", "3", "4" }
+t5 = { "m" }
 
-table.move(t11,1,4,2,t2)
-
-
-print(table.concat(t2, " "))
+table.move(t11, 1, 2, 2, t5)
 
 
-
+print(table.concat(t5, " "))
