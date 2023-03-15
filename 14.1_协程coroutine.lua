@@ -38,7 +38,7 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
 ]]
 function funcc1(a, b)
     --print(coroutine.status(handle)) --这里可以看出是执行中状态
-
+    print("sssssssssssssssssssssssss")
     --return a, b, '100w'
     aa = a * 2
     bb = b * 2
@@ -47,7 +47,11 @@ function funcc1(a, b)
     --第二笔业务，查询你有没有IQ
     print(x, y, z)
 
-    xx, yy, zz = coroutine.yield(x, y, z)
+    x = coroutine.yield(x, y, z)
+
+    coroutine.yield(x)
+
+    print("aaaaaaaaaaaaaaaaaaaaa")
 end
 
 handle = coroutine.create(funcc1) --去银行办业务，然后告诉大堂经理，要取现金(要执行funcc1),大堂经理会帮你叫号，给你一个小票（handle)
@@ -68,4 +72,10 @@ print(coroutine.status(handle))
 
 print(coroutine.resume(handle, "aa", "bb", "cc")) --再办一个业务，查查我其他的卡上的余额，IC卡，IQ卡等
 
+
+print(coroutine.resume(handle, "nice"))
+
+print(coroutine.resume(handle, "nice"))
+
+print(coroutine.resume(handle, "nice"))
 -- print(coroutine.status(handle))
