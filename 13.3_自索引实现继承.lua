@@ -2,6 +2,14 @@
 Author: 15868707168@163.com 15868707168@163.com
 Date: 2023-03-15 09:32:37
 LastEditors: 15868707168@163.com 15868707168@163.com
+LastEditTime: 2023-03-16 09:25:25
+FilePath: \LuaLesson\13.3_自索引实现继承.lua
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+--]]
+--[[
+Author: 15868707168@163.com 15868707168@163.com
+Date: 2023-03-15 09:32:37
+LastEditors: 15868707168@163.com 15868707168@163.com
 LastEditTime: 2023-03-15 09:32:44
 FilePath: \LuaLesson\13.3_面向对象自索引实现继承.lua
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
@@ -21,7 +29,7 @@ end
 
 father:faSay()
 
---father.__index = father --自索引
+father.__index = father --自索引
 
 son = {
     c = 3,
